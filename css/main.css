@@ -1,0 +1,427 @@
+@font-face {
+  font-family: saveurSans;
+  src: url(fonts/Saveur_sans.otf);
+}
+
+@font-face {
+  font-family: jost;
+  src: url(fonts/Jost.ttf);
+}
+
+@font-face {
+  font-family: jost_light;
+  src: url(fonts/Jost_light.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* ===================== NAVBAR ===================== */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  background: transparent;
+  padding: 0 50px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.7s;
+  z-index: 1000;
+}
+
+.navbar:hover,
+.navbar.scrolled {
+  background: white;
+  color: black;
+  border-bottom: 1px solid lightgray;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar ul li {
+  list-style: none;
+}
+
+.navbar ul li a {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  padding: 0 12px;
+  font-size: 0.8em;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar:hover ul li a,
+.navbar.scrolled ul li a {
+  color: black;
+}
+
+.navbar .brand {
+  font-family: saveurSans;
+  font-size: 1.8em;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar:hover .brand,
+.navbar.scrolled .brand {
+  color: black;
+}
+
+.navbar i.fa-bars,
+.navbar i.fa-magnifying-glass {
+  color: white;
+  transition: color 0.3s;
+}
+
+.navbar:hover i.fa-bars,
+.navbar:hover i.fa-magnifying-glass,
+.navbar.scrolled i.fa-bars,
+.navbar.scrolled i.fa-magnifying-glass {
+  color: black;
+}
+
+/* ===================== HERO VIDEO ===================== */
+
+section {
+  margin: 0;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+.videobg {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 125vh;
+  overflow: hidden;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(85%);
+}
+
+.videobg h2 {
+  position: absolute;
+  top: 81.2%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: white;
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.videobg button {
+  position: absolute;
+  top: 91%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: white;
+  padding: 15px 40px;
+  font-size: 15px;
+  font-weight: 100;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(45px);
+  border: 1px solid white;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.videobg button:hover {
+  box-shadow: inset 0 0 0 1px white;
+}
+
+/* ===================== MOBILE ===================== */
+
+@media screen and (max-width: 600px) {
+
+  .nav-hid {
+    display: none;
+  }
+
+  .navbar {
+    height: 150px;
+  }
+
+  .navbar .brand {
+    padding-left: 10px;
+	display: block;
+    width: 70px;            /* same as PNG */
+    height: 70px;           /* same as PNG */
+    background-size: contain;  
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #menu_icon,
+  #search_icon {
+    font-size: 2.5rem;
+  }
+
+  .videobg {
+    height: 225vh;
+  }
+
+  .videobg h2 {
+    top: 79%;
+    font-size: 3rem;
+    font-weight: 550;
+    white-space: nowrap;
+  }
+
+  .videobg button {
+    top: 91%;
+    padding: 38px 145px;
+    font-size: 2rem;
+    border-radius: 100px;
+    border: 2px solid white;
+    backdrop-filter: blur(100px);
+  }
+}
+.logoCanvas {
+        background: white;
+        border: 2px solid #ccc;
+    }
+	
+	/**/
+	/* ===== LINKS SECTION ===== */
+
+.links {
+  padding: 0;
+}
+
+.hr {
+  border: none;
+  border-top: 0.5px solid rgba(0,0,0,0.35);
+  margin: 35px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4.5rem;
+}
+
+.column {
+  flex: 1;
+  text-align: left;
+}
+
+.cell {
+  font-family: jost_light;
+  font-size: 14px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.cell-head {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+a.links {
+  color: inherit;
+  text-decoration: none;
+}
+
+a.links span {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* ===== DESKTOP FOOTER ===== */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4.5rem;
+}
+
+.language {
+  font-family: jost_light;
+  font-size: 0.9rem;
+  color: #000;
+  text-decoration: none;
+}
+
+.footer ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.footer ul li a {
+  font-family: jost_light;
+  font-size: 0.9rem;
+  color: #000;
+  text-decoration: none;
+}
+
+.footer span {
+  padding-left: 8px;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+/* ===== BRAND LOGO ===== */
+
+.last-logo {
+  margin: 45px 0 50px;
+  font-family: saveurSans;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+/* ===== MOBILE ===== */
+
+.accordian-container,
+.mobile-footer,
+.hr-hid {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+
+  .container,
+  .footer,
+  .links {
+    display: none;
+  }
+
+  .accordian-container {
+    display: block;
+  }
+
+  .hr-hid {
+    display: block;
+    margin: 0 4.5rem;
+    border: none;
+    border-top: 0.5px solid rgba(0,0,0,0.35);
+  }
+
+  .accordion {
+    width: 100%;
+    padding: 30px 4.5rem;
+    background: white;
+    border: none;
+    font-family: jost_light;
+    font-size: 2.4rem;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  .accordion::after {
+    content: "+";
+    float: right;
+  }
+
+  .accordion.active::after {
+    content: "−";
+  }
+
+  .panel {
+    max-height: 0;
+    overflow: hidden;
+    padding-left: 4.5rem;
+    transition: max-height 0.3s ease;
+  }
+
+  .panel a {
+    display: block;
+    margin: 30px 0;
+    font-family: jost_light;
+    font-size: 2.3rem;
+    color: #000;
+    text-decoration: none;
+  }
+
+  .panel span {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+  }
+
+  .socialmedia {
+    margin: 60px 0;
+  }
+
+  .social {
+    font-size: 60px;
+    margin: 30px;
+    color: #000;
+  }
+
+  .mobile-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 80px 0;
+  }
+
+  .mobile-footer ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+  }
+
+  .mobile-footer ul li a {
+    font-family: jost_light;
+    font-size: 2.5rem;
+    color: #000;
+    text-decoration: none;
+  }
+
+  .mobile-language {
+    font-family: jost_light;
+    font-size: 2.5rem;
+    margin-top: 50px;
+    color: #000;
+    text-decoration: none;
+  }
+
+  .mobile-language span {
+    text-decoration: underline;
+    text-underline-offset: 20px;
+  }
+}
+.navbar .brand_png {
+    display: block;             /* Makes it act like a box */
+    width: 70px;                /* Set the width you want */
+    height: 70px;               /* Set the height you want */
+    background-image: url('../Img/Lv_png.png'); /* Path to your image */
+    background-size: contain;   /* Keep aspect ratio */
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+.navbar .brand_svg {
+    display: block;
+    width: 70px;  /* adjust size */
+    height: 70px; /* adjust size */
+    background-image: url('../Img/Lv_svg.svg'); /* path to your SVG */
+    background-size: contain;   /* keep aspect ratio */
+    background-repeat: no-repeat;
+    background-position: center;
+}
