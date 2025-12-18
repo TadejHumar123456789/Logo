@@ -1,10 +1,10 @@
-/*
-const canvas = document.getElementById("logoCanvas");
+
+const canvas = document.getElementById("myCanvas");
 const ctx = canvas.getContext("2d");
 
 ctx.strokeStyle = "rgba(0,0,0,0)";
 ctx.miterLimit = 4;
-ctx.scale(0.3,0.3);
+ctx.scale(0.42,0.42);
 
 ctx.beginPath();
 
@@ -44,7 +44,7 @@ ctx.lineTo(133.4,11.8);
 ctx.bezierCurveTo(145.4,11.8,148.8,15.5,143.9,22.4);
 
 ctx.closePath();
-ctx.fill("evenodd");*/
+ctx.fill("evenodd");
 
    var lastScrollTop = 0;
         navbar = document.getElementById("navbar");
@@ -97,4 +97,11 @@ ctx.fill("evenodd");*/
                 }
             );
         }
+
+function initCanvasAndDraw() {
+  const canvas = document.getElementById('myCanvas');
+  const ctx = canvas.getContext('2d');
+  SVGIcons["asd"].draw(ctx);
+}
+window.addEventListener('load', initCanvasAndDraw);
 
