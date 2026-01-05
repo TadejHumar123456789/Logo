@@ -24,16 +24,16 @@ Bezier curves are commonly used in:
 - HTML5  
 - CSS3  
 - JavaScript  
-- Bezier Curves  
+- Bezier Curves
+- Svg   
 
 ---
 
 ## 🎨 Features
 
-- Smooth, curve-based logo design  
-- Scalable and resolution-independent graphics  
-- Lightweight and fast-loading  
-- Clean and minimal presentation  
+- Bezir curve logo design  
+- Png logo
+- Svg logo
 
 ---
 
