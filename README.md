@@ -15,7 +15,6 @@ Bezier curves are commonly used in:
 - Vector graphics
 - Logo design
 - SVG paths
-- Computer graphics and UI design
 
 ---
 
@@ -36,7 +35,7 @@ Bezier curves are commonly used in:
 - Svg logo
 
 ---
-
+## Images for every logo
 <table>
   <tr>
     <td align="center"><strong>SVG</strong></td>
@@ -44,9 +43,9 @@ Bezier curves are commonly used in:
     <td align="center"><strong>PNG</strong></td>
   </tr>
   <tr>
-    <td align="center"><img src="Img/Lv_svg.svg" width="87px" height="79px"></td>
-    <td align="center"><img src="Img/bezir.png"></td>
-    <td align="center"><img src="Img/Lv_png.png"></td>
+    <td align="center"><img src="img/Lv_svg.svg" width="87px" height="79px"></td>
+    <td align="center"><img src="img/bezir.png"></td>
+    <td align="center"><img src="img/Lv_png.png"></td>
   </tr>
 </table>
 
