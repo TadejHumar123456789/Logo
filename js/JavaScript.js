@@ -106,3 +106,13 @@ function initCanvasAndDraw() {
 }
 window.addEventListener('load', initCanvasAndDraw);
 
+
+  const credits = document.getElementById("credits-overlay");
+
+  document.addEventListener("click", (e) => {
+    // Prevent immediate close when clicking the credits box
+    if (e.target.closest(".credits-box")) return;
+
+    credits.classList.toggle("active");
+  });
+
