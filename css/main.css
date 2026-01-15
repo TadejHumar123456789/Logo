@@ -134,6 +134,95 @@ section {
 }
 
 /* ===================== MOBILE ===================== */
+@media screen and (max-width: 600px) {
+
+  .nav-hid {
+    display: none;
+  }
+
+  .navbar {
+    height: 150px;
+  }
+
+  .navbar .brand {
+    padding-left: 10px;
+	display: block;
+    width: 70px;            /* same as PNG */
+    height: 70px;           /* same as PNG */
+    background-size: contain;  
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #menu_icon,
+  #search_icon {
+    font-size: 2.5rem;
+  }
+
+  .videobg {
+    height: 225vh;
+  }
+
+  .videobg h2 {
+    top: 79%;
+    font-size: 3rem;
+    font-weight: 550;
+    white-space: nowrap;
+  }
+
+  
+}
+.logoCanvas {
+        background: white;
+        border: 2px solid #ccc;
+    }
+	
+	/**/
+	/* ===== LINKS SECTION ===== */
+
+.links {
+  padding: 0;
+}
+
+.hr {
+  border: none;
+  border-top: 0.5px solid rgba(0,0,0,0.35);
+  margin: 35px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4.5rem;
+}
+
+.column {
+  flex: 1;
+  text-align: left;
+}
+
+.cell {
+  font-family: jost_light;
+  font-size: 14px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.cell-head {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+a.links {
+  color: inherit;
+  text-decoration: none;
+}
+
+a.links span {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
 .footer {
   display: flex;
   justify-content: space-between;
