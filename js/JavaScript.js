@@ -108,11 +108,23 @@ window.addEventListener('load', initCanvasAndDraw);
 
 
   const credits = document.getElementById("credits-overlay");
+  const menuIcon = document.getElementById("menuTrigger");
+  const menuText = document.getElementById("menuTriggerText");
 
-  document.addEventListener("click", (e) => {
-    // Prevent immediate close when clicking the credits box
-    if (e.target.closest(".credits-box")) return;
-
+  function toggleCredits(e) {
+    e.preventDefault();
     credits.classList.toggle("active");
+  }
+
+  menuIcon.addEventListener("click", toggleCredits);
+  menuText.addEventListener("click", toggleCredits);
+
+  // Close when clicking outside the box
+  credits.addEventListener("click", (e) => {
+    if (!e.target.closest(".credits-box")) {
+      credits.classList.remove("active");
+    }
   });
+
+
 
