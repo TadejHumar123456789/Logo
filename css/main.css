@@ -134,6 +134,39 @@ section {
 }
 
 /* ===================== MOBILE ===================== */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4.5rem;
+}
+
+.language {
+  font-family: jost_light;
+  font-size: 0.9rem;
+  color: #000;
+  text-decoration: none;
+}
+
+.footer ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.footer ul li a {
+  font-family: jost_light;
+  font-size: 0.9rem;
+  color: #000;
+  text-decoration: none;
+}
+
+.footer span {
+  padding-left: 8px;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
 
 
 .brand_png {
