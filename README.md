@@ -2,8 +2,7 @@
 
 This project showcases a custom **logo design created using Bezier curves**. The logo is displayed as a web-based visual hosted with **GitHub Pages**.
 
-🔗 **Website preview:**  
-https://tadejhumar123456789.github.io/Logo/
+
 
 ---
 
