@@ -43,7 +43,7 @@ Bezier curves are commonly used in:
     <td align="center"><strong>PNG</strong></td>
   </tr>
   <tr>
-    <td align="center"><img src="img/Lv_svg.svg" width="87px" height="79px"></td>
+    <td align="center"><img src="img/Lv_svg.svg" width="77px" height="69px"></td>
     <td align="center"><img src="img/bezir.png"></td>
     <td align="center"><img src="img/Lv_png.png" width="120px" height="120px"></td>
   </tr>
